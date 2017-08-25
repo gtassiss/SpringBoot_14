@@ -11,7 +11,7 @@ public class Movie {
     private long year;
     private String description;
 
-    @ManyToMany(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "director_id")
     private Director director;
 
